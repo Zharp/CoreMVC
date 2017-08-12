@@ -31,5 +31,10 @@ namespace CoreMVC.Controllers
         {
             return View();
         }
+
+        public IActionResult Test()
+        {
+            return RedirectToAction("Error", new {});
+        }
     }
 }
